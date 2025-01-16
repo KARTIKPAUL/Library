@@ -1,16 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import SideBarOne from "./Component/Carrousel/SideBarOne";
+import SideBarTwo from './Component/Carrousel/SideBarTwo';
+import SideBarThree from './Component/Carrousel/SideBarThree';
+import SideBarFour from './Component/Carrousel/SideBarFour';
+import SideBarFive from './Component/Carrousel/SideBarFive';
+import SideBarSix from './Component/Carrousel/SideBarSix';  
+import SideBarSeven from './Component/Carrousel/SideBarSeven';
+import SideBarEight from './Component/Carrousel/SideBarEight';  
+import SideBarNine from './Component/Carrousel/SideBarNine';
+import SideBarTen from './Component/Carrousel/SideBarTen';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1 className='text-green-700 text-center text-xl font-bold'>Helllo</h1>
+      <SideBarOne />
+      <SideBarTwo />
+      <SideBarThree />
+      <SideBarFour />
+      <SideBarFive />
+      <SideBarSix /> 
+      <SideBarSeven />
+      <SideBarEight /> 
+      <SideBarNine />
+      <SideBarTen />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

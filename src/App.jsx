@@ -1,14 +1,12 @@
-import { useState } from "react";
-import MainNavbar from "./Component/Navbar/MainNavbar";
-import TestimonialsOne from "./Component/Testimonials/TestimonialsOne";
-import MainLogin from "./Component/LoginPage/MainLoginPage";
+import React from "react";
+import MainServicePage from "./Component/ServicePage/MainServicePage";
 
 function App() {
-  console.log("Rendering App component...");
 
   return (
     <div>
-      <MainLogin />
+      
+      <MainServicePage />
     </div>
   );
 }

@@ -1,6 +1,5 @@
-// LoginPageNine.jsx
 import React, { useState } from "react";
-import { FaNetflix, FaGoogle, FaFacebook } from "react-icons/fa";
+import { FaPlay, FaGoogle, FaFacebook } from "react-icons/fa";
 
 function LoginPageNine() {
   const [isSignup, setIsSignup] = useState(false);
@@ -82,7 +81,7 @@ function LoginPageNine() {
       {/* Login Options */}
       <div className="mt-8 flex justify-center items-center gap-8">
         <div className="flex flex-col items-center text-red-600">
-          <FaNetflix size={30} />
+          <FaPlay size={30} />
           <span>Netflix</span>
         </div>
         <div className="flex flex-col items-center text-gray-500">

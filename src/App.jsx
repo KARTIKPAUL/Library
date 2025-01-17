@@ -1,16 +1,15 @@
 import { useState } from "react";
 import MainNavbar from "./Component/Navbar/MainNavbar";
 import TestimonialsOne from "./Component/Testimonials/TestimonialsOne";
-import MainLoginPage from "./Component/LoginPage/MainLoginPage";
+import MainLogin from "./Component/LoginPage/MainLoginPage";
 
 function App() {
-  
+  console.log("Rendering App component...");
+
   return (
-    <>
-      {/* <MainNavbar />
-      <TestimonialsOne /> */}
-      <MainLoginPage />
-    </>
+    <div>
+      <MainLogin />
+    </div>
   );
 }
 

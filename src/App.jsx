@@ -1,18 +1,15 @@
-
-import MainCard from "./Component/ECommerceCard/MainCard";
-import GalleryTwo from "./Component/Gallery/GalleryTwo";
-
-
+import { useState } from "react";
+import MainNavbar from "./Component/Navbar/MainNavbar";
+import TestimonialsOne from "./Component/Testimonials/TestimonialsOne";
+import MainLogin from "./Component/LoginPage/MainLoginPage";
 
 function App() {
-  
+  console.log("Rendering App component...");
 
   return (
-    <>
-     
-     <MainCard />
-
-    </>
+    <div>
+      <MainLogin />
+    </div>
   );
 }
 

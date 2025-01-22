@@ -24,7 +24,7 @@ function SideBarEight() {
                         About
                     </button>
                 </nav>
-                <div className="p-4">
+                <div className="p-4 text-center">
                     {activeTab === "home" && <p>Home Content</p>}
                     {activeTab === "about" && <p>About Content</p>}
                 </div>

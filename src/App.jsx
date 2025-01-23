@@ -1,5 +1,5 @@
 import React from "react";
-// import MainServicePage from "./Component/ServicePage/MainServicePage";
+import MainServicePage from "./Component/ServicePage/MainServicePage";
 // import MainSidebar from "./Component/Sidebar/MainSidebar";
 // import MainFotter from "./Component/Fotter/MainFotter";
 import AccordionsOne from "./Component/Accordions/AccordionsOne";
@@ -11,7 +11,8 @@ function App() {
       
       {/* <MainSidebar /> */}
       {/* <MainFotter /> */}
-      <AccordionsOne />
+      {/* <AccordionsOne /> */}
+       <MainServicePage/>
 
     </div>
   );

@@ -5,15 +5,17 @@ function SideBarThree() {
 
     return (
         <>
-            {/* Sidebar */}
+            {/* Sidebar Backdrop */}
             <div
-                className={`fixed inset-0 bg-black bg-opacity-50 ${
+                className={`fixed inset-0 bg-black bg-opacity-50 z-10 ${
                     isOpen ? "block" : "hidden"
                 }`}
                 onClick={() => setIsOpen(false)}
             ></div>
+
+            {/* Sidebar */}
             <div
-                className={`fixed top-0 left-0 h-full bg-gray-800 text-white transition-transform duration-300 ${
+                className={`fixed top-0 left-0 h-full bg-gray-800 text-white transition-transform duration-300 z-20 ${
                     isOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
             >
@@ -40,12 +42,14 @@ function SideBarThree() {
             </div>
 
             {/* Toggle Button */}
-            <button
-                onClick={() => setIsOpen(true)}
-                className="fixed top-4 left-4 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700"
-            >
-                ☰
-            </button>
+            {!isOpen && (
+                <button
+                    onClick={() => setIsOpen(true)}
+                    className="fixed top-4 left-4 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 z-30"
+                >
+                    ☰
+                </button>
+            )}
         </>
     );
 }

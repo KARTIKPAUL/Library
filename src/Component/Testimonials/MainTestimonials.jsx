@@ -4,8 +4,10 @@ import TestimonialsTwo from "./TestimonialsTwo";
 const MainTestimonials = () => {
     return (
         <>
-            <TestimonialOne />
-            <TestimonialsTwo />
+           <div className="flex flex-col space-y-10">
+                <TestimonialOne />
+                <TestimonialsTwo />
+           </div>
         </>
     )
 }

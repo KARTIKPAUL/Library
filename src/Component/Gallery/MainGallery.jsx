@@ -5,7 +5,7 @@ const MainGallery = () => {
     return (
         <>
         <GalleryOne />
-        <GalleryTwo />
+        {/* <GalleryTwo /> */}
         </>
     )
 }

@@ -16,16 +16,16 @@ function SideBarFour() {
                         onClick={() => setIsOpen(!isOpen)}
                         className="p-2 bg-gray-700 rounded-full"
                     >
-                        {isOpen ? "←" : "→"}
+                        {isOpen ? "☰" : "☰"}
                     </button>
                 </div>
                 <nav className="flex-grow">
                     <a href="#" className="flex items-center p-4 hover:bg-gray-700">
-                        <span className="material-icons">home</span>
+                        <span className="material-icons">→</span>
                         {isOpen && <span className="ml-2">Home</span>}
                     </a>
                     <a href="#" className="flex items-center p-4 hover:bg-gray-700">
-                        <span className="material-icons">info</span>
+                        <span className="material-icons">→</span>
                         {isOpen && <span className="ml-2">About</span>}
                     </a>
                 </nav>

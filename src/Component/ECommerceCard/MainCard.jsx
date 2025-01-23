@@ -6,7 +6,7 @@ import CardTwo from "./CardTwo";
 const MainCard = () => {
   return (
     <>
-      <div className="flex flex-col gap-y-4 items-center ">
+      <div className="flex flex-col space-y-10 items-center my-10">
         <CardOne />
         <CardTwo />
         <CardThree />

@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function SideBarEight() {
+function CarrouselEight() {
   const settings = {
     dots: true,
     infinite: true,
@@ -21,13 +21,12 @@ function SideBarEight() {
     <div className="w-full max-w-4xl mx-auto my-8 p-6 bg-gray-100 dark:bg-gray-900 rounded-lg shadow-lg pb-8">
       <Slider {...settings}>
         {slides.map((slide) => (
-          <div key={slide.id} className="relative px-4">
+          <div key={slide.id} className="px-4">
             <img
               src={slide.src}
               alt={`Slide ${slide.id}`}
-              className="w-full h-96 object-cover grayscale opacity-80 rounded-lg"
+              className="w-full h-96 object-cover rounded-lg transition-transform duration-300 transform hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg"></div>
           </div>
         ))}
       </Slider>
@@ -35,4 +34,4 @@ function SideBarEight() {
   );
 }
 
-export default SideBarEight;
+export default CarrouselEight;

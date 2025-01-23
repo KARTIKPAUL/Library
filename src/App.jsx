@@ -1,10 +1,15 @@
 import React from "react";
-import MainLogin from "./Component/LoginPage/MainLoginPage";
-// import MainServicePage from "./Component/ServicePage/MainServicePage";
-// import MainSidebar from "./Component/Sidebar/MainSidebar";
-// import MainFotter from "./Component/Fotter/MainFotter";
-// import AccordionsOne from "./Component/Accordions/AccordionsOne";
-// import MainButton from "./Component/Buttons/MainButton";
+import MainCard from "./Component/ECommerceCard/MainCard";
+import MainFeedBack from "./Component/FeedBack/MainFeedBack";
+import MainFotter from "./Component/Fotter/MainFotter";
+import MainGallery from "./Component/Gallery/MainGallery";
+import MainLoginPage from "./Component/LoginPage/MainLoginPage";
+import MediaOne from "./Component/Media/MediaOne";
+import MainNavbar from "./Component/Navbar/MainNavbar";
+import MainServicePage from "./Component/ServicePage/MainServicePage";
+import MainTestimonials from "./Component/Testimonials/MainTestimonials";
+import MainCarrousel from "./Component/Carrousel/MainCarrousel";
+import ThemeChange from "./Component/ThemeChange/ThemeChange";
 
 
 function App() {
@@ -14,9 +19,12 @@ function App() {
       
       {/* <MainSidebar /> */}
       {/* <MainFotter /> */}
-      {/* <AccordionsOne /> */}
-      {/* <MainButton /> */}
-      <MainLogin />
+  {/* <MainTestimonials /> */}
+  {/* <MainFotter /> */}
+ {/* <MainCarrousel /> */}
+ {/* <MainCard /> */}
+ {/* <MainGallery /> */}
+    <ThemeChange />
     </div>
   );
 }

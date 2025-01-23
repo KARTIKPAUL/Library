@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-function SideBarThree() {
+function CarrouselThree() {
   const settings = {
     dots: true,
     infinite: true,
@@ -12,19 +12,19 @@ function SideBarThree() {
   };
 
   const slides = [
-    { id: 1, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFy5pH8mMYfEfCW-Vu7MP8SpqR1UpK7vU2TA&s" },
-    { id: 2, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFy5pH8mMYfEfCW-Vu7MP8SpqR1UpK7vU2TA&s" },
+    { id: 1, src: "https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    { id: 2, src: "https://images.pexels.com/photos/103123/pexels-photo-103123.jpeg?auto=compress&cs=tinysrgb&w=600" },
   ];
 
   return (
-    <div className="w-full max-w-2xl mx-auto my-8 p-6 bg-white dark:bg-gray-800 shadow-md pb-8">
+    <div className="w-full max-w-2xl mx-auto my-8 p-6 bg-white dark:bg-gray-800 shadow-md pb-8 rounded-2xl">
       <Slider {...settings}>
         {slides.map((slide) => (
           <div key={slide.id} className="p-2">
             <img
               src={slide.src}
               alt={`Slide ${slide.id}`}
-              className="w-full"
+              className="w-full rounded-2xl"
             />
           </div>
         ))}
@@ -33,4 +33,4 @@ function SideBarThree() {
   );
 }
 
-export default SideBarThree;
+export default CarrouselThree;

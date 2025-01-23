@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-function SideBarTwo() {
+function CarrouselTwo() {
   const settings = {
     dots: true,
     infinite: true,
@@ -12,8 +12,8 @@ function SideBarTwo() {
   };
 
   const slides = [
-    { id: 1, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFy5pH8mMYfEfCW-Vu7MP8SpqR1UpK7vU2TA&s" },
-    { id: 2, src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFy5pH8mMYfEfCW-Vu7MP8SpqR1UpK7vU2TA&s" },
+    { id: 1, src: "https://media.istockphoto.com/id/1197092494/photo/teenage-boy-doing-homework-using-laptop.jpg?b=1&s=612x612&w=0&k=20&c=vbNfOPcbcaqxJHttT2R4tKGVccW20lNuwinN2QiPgLE=" },
+    { id: 2, src: "https://media.istockphoto.com/id/1353808322/photo/woman-math-teacher-lecturing-online-from-home-on-her-laptop.jpg?b=1&s=612x612&w=0&k=20&c=ghDv26S3UrS1DKdNW2BpVMhIACbubV9QFbvkb5tsv6M=" },
   ];
 
   return (
@@ -33,4 +33,4 @@ function SideBarTwo() {
   );
 }
 
-export default SideBarTwo;
+export default CarrouselTwo;

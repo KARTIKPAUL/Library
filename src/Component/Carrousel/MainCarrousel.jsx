@@ -6,9 +6,8 @@ import SideBarFive from './CarrouselFive';
 import SideBarSix from './CarrouselSix';  
 import SideBarSeven from './CarrouselSeven';
 import SideBarEight from './CarrouselEight';  
-import SideBarNine from './CarrouselNine';
-import SideBarTen from './CarrouselTen';
-import CarrouselEEleven from "./CarrouselEleve";
+import CarrouselNine from "./CarrouselNine";
+import CarrouseleEleven from "./CarrouselEleven";
 
 
 const MainCarrousel = () => {
@@ -17,17 +16,21 @@ const MainCarrousel = () => {
   return (
     <>
       
-      <CarrouselEEleven />
-      <SideBarOne />
-      <SideBarTwo />
-      <SideBarThree />
+      <CarrouseleEleven />
+      <CarrouselNine />
+      {/* <SideBarOne /> */}
+      {/* <SideBarTwo /> */}
+      
+      <SideBarEight />
+      <SideBarSeven />
+      {/* <SideBarThree />
       <SideBarFour />
       <SideBarFive />
-      <SideBarSix /> 
-      <SideBarSeven />
-      <SideBarEight /> 
-      <SideBarNine />
-      <SideBarTen />
+      <SideBarSix />  */}
+      
+       
+      
+      
 
     </>
   );

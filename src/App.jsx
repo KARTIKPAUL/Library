@@ -12,21 +12,35 @@ import MainCarrousel from "./Component/Carrousel/MainCarrousel";
 import ThemeChange from "./Component/ThemeChange/ThemeChange";
 import MainButton from "./Component/Buttons/MainButton";
 
-
 function App() {
-
   return (
-    <div> 
+    <div>
+      {/* Complete  */}
+
+      {/* <MainLoginPage /> */}
+      {/* <MainButton /> */}
+      {/* <MainCarrousel />  */}
+      {/* <MainCard /> */}
+      {/* <MainGallery /> */}
+      {/* <ThemeChange /> */}
+
+
+
       
+
+
+      {/* Under Processing */}
+
+
+      <MainNavbar />
       {/* <MainSidebar /> */}
+      {/* <MainTestimonials /> */}
       {/* <MainFotter /> */}
-  {/* <MainTestimonials /> */}
-  {/* <MainFotter /> */}
- {/* <MainCarrousel /> */}
- {/* <MainCard /> */}
- <MainGallery />
-    {/* <ThemeChange /> */}
-    {/* <MainButton /> */}
+      
+      
+      
+      
+
     </div>
   );
 }

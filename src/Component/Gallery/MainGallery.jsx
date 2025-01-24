@@ -13,7 +13,7 @@ const MainGallery = () => {
         <GalleryFour />
         <GalleryThree />
         <GalleryFive />
-        <GallerySix />
+        {/* <GallerySix /> */}
 
         </>
     )

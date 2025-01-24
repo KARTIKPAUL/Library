@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CarrouselEEleven() {
+function CarrouseleEleven() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const games = [
@@ -79,4 +79,4 @@ function CarrouselEEleven() {
   );
 }
 
-export default CarrouselEEleven;
+export default CarrouseleEleven;

@@ -1,13 +1,10 @@
-import { useState } from 'react';
-import LoginPageOne from './LoginPageOne';
-import LoginPageTwo from './LoginPageTwo';
-import LoginPageThree from './LoginPageThree';
-import LoginPageFour from './LoginPageFour';
-import LoginPageFive from './LoginPageFive';
-import LoginPageSix from './LoginPageSix';
-import LoginPageSeven from './LoginPageSeven';
-import LoginPageEight from './LoginPageEight';
-import LoginPageNine from './LoginPageNine';
+import { useState } from "react";
+import LoginPageOne from "./LoginPageOne";
+import LoginPageTwo from "./LoginPageTwo";
+import LoginPageThree from "./LoginPageThree";
+import LoginPageFour from "./LoginPageFour";
+import LoginPageFive from "./LoginPageFive";
+
 
 function MainLogin() {
   const [page, setPage] = useState(1);
@@ -18,23 +15,26 @@ function MainLogin() {
     <LoginPageThree />,
     <LoginPageFour />,
     <LoginPageFive />,
-    <LoginPageSix />,
-    <LoginPageSeven />,
-    <LoginPageEight />,
-    <LoginPageNine />,
+    
   ];
 
-  console.log('Current page:', page);
+  console.log("Current page:", page);
 
   return (
-    <div className="max-w-md mx-auto py-12">
-      {loginPages[page - 1]}
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+      {/* Render the currently selected login page */}
+      <div className="w-full h-full">{loginPages[page - 1]}</div>
 
+      {/* Pagination Buttons */}
       <div className="flex justify-center gap-x-2 mt-4">
         {[...Array(loginPages.length)].map((_, index) => (
           <button
             key={index}
-            className={`border p-2 rounded ${page === index + 1 ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
+            className={`border p-2 rounded ${
+              page === index + 1
+                ? "bg-blue-500 text-white"
+                : "bg-white text-black"
+            }`}
             onClick={() => setPage(index + 1)}
           >
             {index + 1}

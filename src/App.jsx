@@ -19,14 +19,14 @@ function App() {
     <div> 
       
       {/* <MainSidebar /> */}
-      {/* <MainFotter /> */}
+      <MainFotter />
   {/* <MainTestimonials /> */}
   {/* <MainFotter /> */}
  {/* <MainCarrousel />  */}
  {/* <MainCard /> */}
  {/* <MainGallery /> */}
     {/* <ThemeChange /> */}
-    <MainLoginPage />
+    {/* <MainLoginPage /> */}
 
 
 

@@ -4,7 +4,7 @@ import SideBarTwo from "./SideBarTwo";
 import SideBarThree from "./SideBarThree";
 import SideBarFour from "./SideBarFour";
 import SideBarFive from "./SideBarFive";
-import SideBarSix from "./SideBarSix";
+// import SideBarSix from "./SideBarSix";
 import SideBarSeven from "./SideBarSeven";
 import SideBarEight from "./SideBarEight";
 
@@ -18,7 +18,7 @@ function MainSideBar() {
     <SideBarThree />,
     <SideBarFour />,
     <SideBarFive />,
-    <SideBarSix />,
+    // <SideBarSix />,
     <SideBarSeven />,
     <SideBarEight />,
   ];

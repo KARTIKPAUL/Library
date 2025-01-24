@@ -9,27 +9,22 @@ import MainNavbar from "./Component/Navbar/MainNavbar";
 import MainServicePage from "./Component/ServicePage/MainServicePage";
 import MainTestimonials from "./Component/Testimonials/MainTestimonials";
 import MainCarrousel from "./Component/Carrousel/MainCarrousel";
-import MainSideBar from "./Component/Sidebar/MainSideBar";
-
+import ThemeChange from "./Component/ThemeChange/ThemeChange";
 
 
 function App() {
 
   return (
-    <div>
+    <div> 
       
-    {/* <MainCard /> */}
-    {/* <MainFeedBack /> */}
-    {/* <MainFotter /> */}
-    {/* <MainGallery /> */}
-    {/* <MainLoginPage /> */}
-    {/* <MainServicePage /> */}
-    {/* <MainTestimonials /> */}
-    {/* <MainCarrousel /> */}
-    {/* <MediaOne /> */}
-    {/* <MainSideBar /> */}
-    <MainNavbar />
-
+      {/* <MainSidebar /> */}
+      {/* <MainFotter /> */}
+  {/* <MainTestimonials /> */}
+  {/* <MainFotter /> */}
+ {/* <MainCarrousel /> */}
+ {/* <MainCard /> */}
+ {/* <MainGallery /> */}
+    <ThemeChange />
     </div>
   );
 }

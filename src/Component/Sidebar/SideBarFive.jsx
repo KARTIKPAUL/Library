@@ -4,7 +4,7 @@ function SideBarFive() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="relative h-screen">
+        <div className="flex h-screen">
             <div
                 className={`absolute top-4 left-4 bg-gray-800 text-white rounded-lg shadow-lg ${
                     isOpen ? "p-4 w-64" : "p-2 w-16"

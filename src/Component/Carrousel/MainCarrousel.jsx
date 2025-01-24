@@ -6,9 +6,8 @@ import SideBarFive from './CarrouselFive';
 import SideBarSix from './CarrouselSix';  
 import SideBarSeven from './CarrouselSeven';
 import SideBarEight from './CarrouselEight';  
-import SideBarNine from './CarrouselNine';
-import SideBarTen from './CarrouselTen';
 import CarrouselEEleven from "./CarrouselEleve";
+import CarrouselNine from "./CarrouselNine";
 
 
 const MainCarrousel = () => {
@@ -26,8 +25,7 @@ const MainCarrousel = () => {
       <SideBarSix /> 
       <SideBarSeven />
       <SideBarEight /> 
-      <SideBarNine />
-      <SideBarTen />
+      <CarrouselNine />
 
     </>
   );

@@ -21,10 +21,13 @@ function App() {
       {/* <MainFotter /> */}
   {/* <MainTestimonials /> */}
   {/* <MainFotter /> */}
- {/* <MainCarrousel /> */}
+ <MainCarrousel /> 
  {/* <MainCard /> */}
  {/* <MainGallery /> */}
-    <ThemeChange />
+    {/* <ThemeChange /> */}
+
+
+
     </div>
   );
 }

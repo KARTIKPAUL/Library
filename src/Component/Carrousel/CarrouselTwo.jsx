@@ -1,6 +1,48 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+
+function CustomPrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <FaArrowCircleLeft
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        color: "#1d4ed8",
+        fontSize: "1.5rem", // Smaller font size
+        width: "35px", // Set fixed width
+        height: "35px", // Set fixed height
+        left: "-22px", // Adjust to move inward
+        zIndex: 1,
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function CustomNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <FaArrowCircleRight
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        color: "#1d4ed8",
+        fontSize: "1.5rem", // Smaller font size
+        width: "35px", // Set fixed width
+        height: "35px", // Set fixed height
+        right: "-22px", // Adjust to move inward
+        zIndex: 1,
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
 function CarrouselTwo() {
   const settings = {
     dots: true,
@@ -9,11 +51,19 @@ function CarrouselTwo() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
   };
 
   const slides = [
-    { id: 1, src: "https://media.istockphoto.com/id/1197092494/photo/teenage-boy-doing-homework-using-laptop.jpg?b=1&s=612x612&w=0&k=20&c=vbNfOPcbcaqxJHttT2R4tKGVccW20lNuwinN2QiPgLE=" },
-    { id: 2, src: "https://media.istockphoto.com/id/1353808322/photo/woman-math-teacher-lecturing-online-from-home-on-her-laptop.jpg?b=1&s=612x612&w=0&k=20&c=ghDv26S3UrS1DKdNW2BpVMhIACbubV9QFbvkb5tsv6M=" },
+    {
+      id: 1,
+      src: "https://media.istockphoto.com/id/1197092494/photo/teenage-boy-doing-homework-using-laptop.jpg?b=1&s=612x612&w=0&k=20&c=vbNfOPcbcaqxJHttT2R4tKGVccW20lNuwinN2QiPgLE=",
+    },
+    {
+      id: 2,
+      src: "https://media.istockphoto.com/id/1353808322/photo/woman-math-teacher-lecturing-online-from-home-on-her-laptop.jpg?b=1&s=612x612&w=0&k=20&c=ghDv26S3UrS1DKdNW2BpVMhIACbubV9QFbvkb5tsv6M=",
+    },
   ];
 
   return (

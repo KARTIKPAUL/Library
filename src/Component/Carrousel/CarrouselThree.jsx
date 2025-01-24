@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 function CarrouselThree() {
   const settings = {
     dots: true,
@@ -9,11 +10,19 @@ function CarrouselThree() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 10000, // Set the transition interval to 10 seconds (10,000 ms)
   };
 
   const slides = [
-    { id: 1, src: "https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=600" },
-    { id: 2, src: "https://images.pexels.com/photos/103123/pexels-photo-103123.jpeg?auto=compress&cs=tinysrgb&w=600" },
+    {
+      id: 1,
+      src: "https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=600",
+    },
+    {
+      id: 2,
+      src: "https://images.pexels.com/photos/103123/pexels-photo-103123.jpeg?auto=compress&cs=tinysrgb&w=600",
+    },
   ];
 
   return (

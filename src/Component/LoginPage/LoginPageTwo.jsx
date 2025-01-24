@@ -1,93 +1,114 @@
-// LoginPageTwo.jsx
 import React, { useState } from "react";
-import { FaGoogle, FaApple } from "react-icons/fa";
+import { FaInstagram, FaGoogle, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 function LoginPageTwo() {
-  const [isSignup, setIsSignup] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className="font-sans max-w-md mx-auto py-12 px-6 text-center border border-gray-300 rounded-lg bg-white shadow-lg">
-      <div className="text-3xl font-bold mb-6">MyApp</div>
-      
-      {/* Login or Signup Form */}
-      {!isSignup ? (
-        <>
-          <form className="flex flex-col space-y-4">
-            <input
-              type="text"
-              placeholder="Username or Email"
-              className="p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              className="p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-            <button
-              type="submit"
-              className="p-4 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600"
-            >
-              Login
-            </button>
-          </form>
+    <div className="flex h-screen">
+      {/* Left Section: Full-Screen Image */}
+      <div className="hidden md:block w-1/2">
+        <img
+          src="https://img.freepik.com/free-photo/superfood-background-with-green-vegetables_53876-106104.jpg"
+          alt="Vegetables"
+          className="w-full h-full object-cover"
+        />
+      </div>
 
-          <p className="mt-6">
-            Don't have an account?{" "}
-            <span
-              onClick={() => setIsSignup(true)}
-              className="text-blue-500 cursor-pointer hover:underline"
-            >
-              Sign up
-            </span>
-          </p>
-        </>
-      ) : (
-        <>
-          <form className="flex flex-col space-y-4">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
+      {/* Right Section: Login/Signup Form */}
+      <div className="w-full md:w-1/2 flex items-center justify-center bg-white">
+        <div className="w-full max-w-md px-8">
+          <div className="text-center mb-6">
+            <h1 className="text-3xl font-bold text-gray-800">
+              {isLogin ? "Hello, Welcome Back" : "Join Us"}
+            </h1>
+            <p className="text-gray-500 mt-2">
+              {isLogin
+                ? "Login to manage your account"
+                : "Sign up to get started with us"}
+            </p>
+          </div>
+
+          <form className="space-y-4">
+            {!isLogin && (
+              <input
+                type="text"
+                placeholder="Please Enter Your Name"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
+              />
+            )}
             <input
               type="email"
-              placeholder="Email"
-              className="p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Please Enter Your Email"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
             />
             <input
               type="password"
-              placeholder="Password"
-              className="p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Please Enter Your Password"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
             />
+            {!isLogin && (
+              <input
+                type="password"
+                placeholder="Confirm Your Password"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
+              />
+            )}
+            {isLogin && (
+              <div className="text-right">
+                <a
+                  href="#"
+                  className="text-sm text-blue-500 hover:underline"
+                >
+                  Forgot Your Password?
+                </a>
+              </div>
+            )}
             <button
               type="submit"
-              className="p-4 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600"
+              className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
             >
-              Sign Up
+              {isLogin ? "Login" : "Sign Up"}
             </button>
           </form>
 
-          <p className="mt-6">
-            Already have an account?{" "}
-            <span
-              onClick={() => setIsSignup(false)}
-              className="text-blue-500 cursor-pointer hover:underline"
-            >
-              Login
-            </span>
-          </p>
-        </>
-      )}
+          {/* Divider */}
+          <div className="flex items-center my-6">
+            <span className="w-full border-t border-gray-300"></span>
+            <span className="px-4 text-gray-500">or</span>
+            <span className="w-full border-t border-gray-300"></span>
+          </div>
 
-      {/* Login Options */}
-      <div className="mt-8 flex justify-center items-center gap-8">
-        <div className="flex flex-col items-center text-gray-500">
-          <FaGoogle size={30} />
-          <span>Google</span>
-        </div>
-        <div className="flex flex-col items-center text-gray-800">
-          <FaApple size={30} />
-          <span>Apple</span>
+          {/* Social Media Buttons */}
+          <div className="flex justify-center space-x-4">
+            <button className="bg-gray-100 p-3 rounded-full hover:bg-gray-200">
+              <FaGoogle className="text-gray-600" />
+            </button>
+            <button className="bg-gray-100 p-3 rounded-full hover:bg-gray-200">
+              <FaFacebook className="text-blue-600" />
+            </button>
+            <button className="bg-gray-100 p-3 rounded-full hover:bg-gray-200">
+              <FaInstagram className="text-pink-500" />
+            </button>
+            <button className="bg-gray-100 p-3 rounded-full hover:bg-gray-200">
+              <FaEnvelope className="text-gray-600" />
+            </button>
+          </div>
+
+          {/* Toggle Login/Signup */}
+          <div className="mt-6 text-center">
+            <p className="text-sm text-gray-500">
+              {isLogin
+                ? "Don't have an account? "
+                : "Already have an account? "}
+              <button
+                onClick={() => setIsLogin(!isLogin)}
+                className="text-blue-500 hover:underline"
+              >
+                {isLogin ? "Sign Up" : "Login"}
+              </button>
+            </p>
+          </div>
         </div>
       </div>
     </div>

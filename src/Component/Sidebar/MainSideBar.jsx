@@ -8,7 +8,7 @@ import SideBarSix from "./SideBarSix";
 import SideBarSeven from "./SideBarSeven";
 import SideBarEight from "./SideBarEight";
 
-function MainSidebar() {
+function MainSideBar() {
   const [sidebar, setSidebar] = useState(1); // Default to SidebarOne
 
   // Array of sidebar components
@@ -46,4 +46,4 @@ function MainSidebar() {
   );
 }
 
-export default MainSidebar;
+export default MainSideBar;

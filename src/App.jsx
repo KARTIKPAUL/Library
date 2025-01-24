@@ -8,6 +8,9 @@ import MediaOne from "./Component/Media/MediaOne";
 import MainNavbar from "./Component/Navbar/MainNavbar";
 import MainServicePage from "./Component/ServicePage/MainServicePage";
 import MainTestimonials from "./Component/Testimonials/MainTestimonials";
+import MainCarrousel from "./Component/Carrousel/MainCarrousel";
+import MainSideBar from "./Component/Sidebar/MainSideBar";
+
 
 
 function App() {
@@ -15,7 +18,17 @@ function App() {
   return (
     <div>
       
-    <MainTestimonials />
+    {/* <MainCard /> */}
+    {/* <MainFeedBack /> */}
+    {/* <MainFotter /> */}
+    {/* <MainGallery /> */}
+    {/* <MainLoginPage /> */}
+    {/* <MainServicePage /> */}
+    {/* <MainTestimonials /> */}
+    {/* <MainCarrousel /> */}
+    {/* <MediaOne /> */}
+    {/* <MainSideBar /> */}
+    <MainNavbar />
 
     </div>
   );

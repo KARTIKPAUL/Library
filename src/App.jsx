@@ -12,6 +12,7 @@ import MainCarrousel from "./Component/Carrousel/MainCarrousel";
 import ThemeChange from "./Component/ThemeChange/ThemeChange";
 
 
+
 function App() {
 
   return (
@@ -21,10 +22,12 @@ function App() {
       {/* <MainFotter /> */}
   {/* <MainTestimonials /> */}
   {/* <MainFotter /> */}
- <MainCarrousel /> 
+ {/* <MainCarrousel />  */}
  {/* <MainCard /> */}
  {/* <MainGallery /> */}
     {/* <ThemeChange /> */}
+    <MainLoginPage />
+
 
 
 

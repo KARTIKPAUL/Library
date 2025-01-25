@@ -6,8 +6,7 @@ import FotterFour from "./FotterFour";
 import FotterFive from "./FotterFive";
 import FotterSix from "./FotterSix";
 import FotterSeven from "./FotterSeven";
-import FotterEight from "./FotterEight";
-import FotterNine from "./FotterNine";
+
 
 function MainFotter() {
   const [footer, setFooter] = useState(1); // Default footer
@@ -20,8 +19,7 @@ function MainFotter() {
     <FotterFive />,
     <FotterSix />,
     <FotterSeven />,
-    <FotterEight />,
-    <FotterNine />,
+
   ];
 
   return (

@@ -11,11 +11,14 @@ import MainTestimonials from "./Component/Testimonials/MainTestimonials";
 import MainCarrousel from "./Component/Carrousel/MainCarrousel";
 import ThemeChange from "./Component/ThemeChange/ThemeChange";
 import MainButton from "./Component/Buttons/MainButton";
+import MainSideBar from "./Component/Sidebar/MainSideBar";
 
 function App() {
   return (
     <div>
       {/* Complete  */}
+
+
 
       {/* <MainLoginPage /> */}
       {/* <MainButton /> */}
@@ -23,24 +26,21 @@ function App() {
       {/* <MainCard /> */}
       {/* <MainGallery /> */}
       {/* <ThemeChange /> */}
+      {/* <MainFotter /> */}
 
 
-
-      
 
 
       {/* Under Processing */}
 
-
       <MainNavbar />
-      {/* <MainSidebar /> */}
+      {/* <MainSideBar /> */}
       {/* <MainTestimonials /> */}
-      {/* <MainFotter /> */}
       
       
       
       
-
+      
     </div>
   );
 }

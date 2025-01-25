@@ -1,50 +1,130 @@
-import React, { useState } from 'react';
+import React from "react";
 
 const NavbarFour = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
-    <nav ClassName="bg-white shadow-lg fixed w-full top-0 left-0 z-50">
-    <div ClassName="max-w-7xl mx-auto px-4">
-        <div ClassName="flex justify-between items-center h-16">
-            
-            <div ClassName="flex-shrink-0 flex items-center">
-                <a href="/" ClassName="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
-                    Logo
-                </a>
-            </div>
-
-           
-            <div ClassName="hidden md:flex items-center space-x-8">
-                <a href="#" ClassName="text-gray-600 hover:text-indigo-600 px-3 py-2 transition-all duration-300 hover:scale-105 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all">Home</a>
-                <a href="#" ClassName="text-gray-600 hover:text-indigo-600 px-3 py-2 transition-all duration-300 hover:scale-105 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all">About</a>
-                <a href="#" ClassName="text-gray-600 hover:text-indigo-600 px-3 py-2 transition-all duration-300 hover:scale-105 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all">Services</a>
-                <a href="#" ClassName="text-gray-600 hover:text-indigo-600 px-3 py-2 transition-all duration-300 hover:scale-105 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all">Contact</a>
-            </div>
-
-           
-            <div ClassName="md:hidden flex items-center">
-                <button ClassName="mobile-menu-button outline-none" onclick="toggleMenu()">
-                    <svg ClassName="w-6 h-6 text-gray-500 hover:text-indigo-600 transition-colors duration-300" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
+    <header className="w-full">
+      {/* Top Section */}
+      <div className="bg-[#001F5C] text-white py-2 px-4 flex justify-between items-center">
+        {/* Left Logos */}
+        <div className="flex items-center space-x-4">
+        <img
+            src="https://images.pexels.com/photos/7702229/pexels-photo-7702229.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Women's Premier League"
+            className="h-8 w-auto rounded-full"
+          />
+          <img
+            src="https://images.pexels.com/photos/9420724/pexels-photo-9420724.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="BCCI Logo"
+            className="h-8 w-auto rounded-full"
+          />
+          
         </div>
 
-       
-        <div ClassName="mobile-menu hidden md:hidden transition-all duration-300 ease-in-out">
-            <div ClassName="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" ClassName="block text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md transition-all duration-300 hover:bg-gray-50">Home</a>
-                <a href="#" ClassName="block text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md transition-all duration-300 hover:bg-gray-50">About</a>
-                <a href="#" ClassName="block text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md transition-all duration-300 hover:bg-gray-50">Services</a>
-                <a href="#" ClassName="block text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md transition-all duration-300 hover:bg-gray-50">Contact</a>
-            </div>
+        {/* Right Social Media Links */}
+        <div className="flex items-center space-x-4">
+          <span>Follow Us</span>
+          <a
+            href="#"
+            className="hover:text-gray-300 transition-colors"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            className="hover:text-gray-300 transition-colors"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            className="hover:text-gray-300 transition-colors"
+          >
+            <i className="fab fa-facebook"></i>
+          </a>
         </div>
-    </div>
-</nav>
+      </div>
 
+      {/* Main Navbar */}
+      <nav className="bg-[#17408B] text-white py-3">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+          {/* Left Section: Links */}
+          <div className="flex space-x-6">
+            <a
+              href="#"
+              className="hover:text-gray-300 text-sm font-semibold uppercase"
+            >
+              Matches
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-300 text-sm font-semibold uppercase"
+            >
+              Videos
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-300 text-sm font-semibold uppercase"
+            >
+              Stats
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-300 text-sm font-semibold uppercase"
+            >
+              Points Table
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-300 text-sm font-semibold uppercase"
+            >
+              Teams
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-300 text-sm font-semibold uppercase"
+            >
+              Auction
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-300 text-sm font-semibold uppercase"
+            >
+              News
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-300 text-sm font-semibold uppercase"
+            >
+              More
+            </a>
+          </div>
 
+          {/* Right Section: Extras */}
+          <div className="flex items-center space-x-4">
+            <a
+              href="#"
+              className="flex items-center space-x-1 hover:text-gray-300 text-sm"
+            >
+              <i className="fas fa-gavel"></i>
+              <span>Auction Fan Poll</span>
+            </a>
+            <a
+              href="#"
+              className="flex items-center space-x-1 hover:text-gray-300 text-sm"
+            >
+              <i className="fas fa-trophy"></i>
+              <span>Viewers Choice</span>
+            </a>
+            <a
+              href="#"
+              className="hover:text-gray-300 transition-colors text-sm"
+            >
+              <i className="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
   );
 };
 

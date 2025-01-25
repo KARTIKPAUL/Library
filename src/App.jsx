@@ -10,6 +10,8 @@ import MainServicePage from "./Component/ServicePage/MainServicePage";
 import MainTestimonials from "./Component/Testimonials/MainTestimonials";
 import MainCarrousel from "./Component/Carrousel/MainCarrousel";
 import ThemeChange from "./Component/ThemeChange/ThemeChange";
+import MainSidebar from "./Component/Sidebar/MainSideBar";
+
 
 
 
@@ -18,8 +20,8 @@ function App() {
   return (
     <div> 
       
-      {/* <MainSidebar /> */}
-      <MainFotter />
+      <MainSidebar />
+      {/* <MainFotter /> */}
   {/* <MainTestimonials /> */}
   {/* <MainFotter /> */}
  {/* <MainCarrousel />  */}

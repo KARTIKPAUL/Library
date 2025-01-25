@@ -4,9 +4,7 @@ import SideBarTwo from "./SideBarTwo";
 import SideBarThree from "./SideBarThree";
 import SideBarFour from "./SideBarFour";
 import SideBarFive from "./SideBarFive";
-// import SideBarSix from "./SideBarSix";
-import SideBarSeven from "./SideBarSeven";
-import SideBarEight from "./SideBarEight";
+
 
 function MainSidebar() {
   const [sidebar, setSidebar] = useState(1); // Default to SidebarOne
@@ -18,9 +16,7 @@ function MainSidebar() {
     <SideBarThree />,
     <SideBarFour />,
     <SideBarFive />,
-    // <SideBarSix />,
-    <SideBarSeven />,
-    <SideBarEight />,
+
   ];
 
   return (
